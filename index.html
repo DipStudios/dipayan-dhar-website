@@ -49,15 +49,122 @@
     </section>
 
     <section id="about">
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" 
-                alt="Profile Pic"
-                class="about-pic">
+    <h2 class="title">About Me</h2>
+    <div class="about-tabs">
+        <!-- Tab Buttons -->
+        <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="bio">Description</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content active" id="bio">
+            <div class="descr-img">
+                <img src="./assets/profile-pic.jpg" alt="Profile Picture">
+            </div>
+            <div class="descr-text"> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper metus in orci suscipit, vel fringilla felis auctor. Sed vitae est viverra, pharetra ex sed, tempus arcu. Suspendisse at sapien ac massa blandit efficitur. Nunc dolor ligula, euismod et nulla sodales, lobortis malesuada quam. Quisque sed pretium lacus, quis aliquam dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris pellentesque, nulla nec cursus sollicitudin, elit neque euismod enim, non auctor sapien enim in magna. Maecenas malesuada eget leo ut iaculis. In et sem ut nunc imperdiet gravida rhoncus sed magna. Nulla feugiat sollicitudin sem convallis tempus.
+
+Curabitur nec justo ultrices, lacinia felis eu, pulvinar leo. Pellentesque lobortis libero ut ante feugiat, feugiat molestie eros feugiat. Nam egestas varius diam ut sodales. Nullam ut dapibus ex. Donec mollis metus vel ex porttitor, sit amet sodales lorem scelerisque. Fusce rutrum mi non cursus ultricies. Pellentesque aliquet massa vel pulvinar semper. Quisque ut cursus mauris. Fusce a luctus risus, a vulputate quam.
+
+Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum bibendum est lectus, sit amet viverra est aliquam in. Nunc ornare lacus nulla. Quisque vel mauris eu leo fermentum tempor. Suspendisse at dui risus. Aliquam in suscipit tellus. Etiam urna sem, commodo non sem non, porta lacinia elit. Curabitur diam risus, aliquam vel facilisis auctor, posuere non nulla. Nunc varius, nisi non aliquet luctus, nisl justo pulvinar magna, eget sagittis ipsum massa eget arcu.</p>
             </div>
         </div>
+
+        <div class="tab-content" id="skills">
+        <div class="skills-container">
+
+            <div class="skills-category">
+            <h3>Programming</h3>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>HTML, CSS, JavaScript</li>
+            </ul>
+            </div>
+
+            <div class="skills-category">
+            <h3>Hardware & Embedded</h3>
+            <ul>
+                <li>Arduino</li>
+                <li>Raspberry Pi</li>
+            </ul>
+            </div>
+
+            <div class="skills-category">
+            <h3>Professional</h3>
+            <ul>
+                <li>Leadership</li>
+                <li>Project Management</li>
+                <li>Teamwork & Communication</li>
+                <li>Technical Writing</li>
+                <li>Presentation Skills</li>
+            </ul>
+            </div>
+            
+            <div class="skills-category">
+            <h3>Software Tools</h3>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>Arduino IDE</li>
+                <li>Onshape (3D CAD)</li>
+                <li>Bambu Studio (3D Printing)</li>
+                <li>NI LabVIEW</li>
+            </ul>
+            </div>
+
+            <div class="skills-category">
+            <h3>Documentation</h3>
+            <ul>
+                <li>Microsoft Word, Excel, PowerPoint</li>
+                <li>LaTeX</li>
+            </ul>
+            </div>
+
+            <div class="skills-category">
+            <h3>Operating Systems</h3>
+            <ul>
+                <li>Windows</li>
+                <li>Linux</li>
+            </ul>
+            </div>
+
+
+        </div>
+        </div>
+
+
+        <div id="education" class="tab-content">
+        <div class="edu-item">
+            <img src="./assets/munlogo.png" alt="MUN Logo" class="edu-logo">
+            <div>
+            <h3>Memorial University of Newfoundland</h3>
+            <h4>Bachelor of Engineering (Co-op)</h4>
+            <p>September 2024 – Present</p>
+            <p>• Term 3 Computer Engineering, Class of 2029</p>
+            <p>• GPA: 4.00</p>
+            <p>• Member of Software Team in Paradigm Engineering</p>
+            </div>
+        </div>
+
+        <div class="edu-item">
+            <img src="./assets/gonzaga-logo.jpg" alt="Gonzaga High School Logo" class="edu-logo">
+            <div>
+            <h3>Gonzaga High School</h3>
+            <h4>High School Diploma</h4>
+            <p>September 2021 – June 2024</p>
+            <p>• Graduated with Bronze Governor General’s Academic Medal</p>
+            <p>• Programming Lead of Gonzaga Robotics Team (Viking Industries)</p>
+            <p>• Founder of Coding and Advanced Math Society</p>
+            <p>• Youth STEM Workshop Leader for Creators of Tomorrow Initiative</p>
+            </div>
+        </div>
+        </div>
+
+    </div>
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
