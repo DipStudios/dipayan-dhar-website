@@ -532,3 +532,48 @@ section {
   margin-top: 2rem;
   position: relative;
 }
+
+/* Contact */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+#contact a:hover {
+  font-weight: unset;   
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border:#A63A50 0.1rem solid;
+    background: #f9f9f9;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+
+.contact-icon{
+    cursor: default;
+    height: 2rem;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
