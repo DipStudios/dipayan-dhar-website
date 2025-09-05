@@ -86,7 +86,6 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
   border-bottom: 2px solid rgba(166, 58, 80, 0.1);
-  padding-bottom: 4rem;
 }
 
 
@@ -339,6 +338,11 @@ section {
   margin-left: 1rem;
 }
 
+.edu-divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 1.5rem 0;
+}
 .edu-item h3 {
   margin: 0;
   font-size: 1.25rem;
@@ -356,4 +360,107 @@ section {
   to {opacity: 1;}
 }
 
+/* Adjusted section spacing */
+section {
+  height: auto;
+  min-height: 0;
+  padding: 2.5rem 0;
+  margin: 0 10rem;
+}
+
+#profile {
+  height: auto;
+  margin-top: 0;
+  padding: 2.5rem 0;
+}
+
+
+
+
+
+
+/* Experience */
+#experience h2 {
+    padding-bottom: 2rem;
+}
+
+.exp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem;
+  width: 100%;                   
+  margin: 0 auto;              
+}
+
+.exp-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.exp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 2rem;                      /* space between boxes */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.exp-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exp-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  background: white;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.exp-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-header-text h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #A63A50;
+}
+
+.exp-header-text h4 {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+}
+
+.exp-header-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgb(120, 120, 120);
+}
+
+.exp-text {
+  margin-left: 1.5rem;
+}
 
