@@ -13,3 +13,18 @@ tabBtns.forEach(btn => {
     document.getElementById(btn.dataset.tab).classList.add("active");
   });
 });
+
+
+// Initialize Swiper
+const swiper = new Swiper('.carousel-container', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.next-button',
+    prevEl: '.prev-button',
+  },
+});
