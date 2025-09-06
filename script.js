@@ -14,18 +14,18 @@ tabBtns.forEach(btn => {
   });
 });
 
-
-// Initialize Swiper
-const swiper = new Swiper('.carousel-container', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
+  slidesPerGroup: 1,
   spaceBetween: 20,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
   navigation: {
     nextEl: '.next-button',
     prevEl: '.prev-button',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  allowTouchMove: false, 
+  loop: false,
 });
-

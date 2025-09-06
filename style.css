@@ -498,7 +498,7 @@ section {
   border-radius: 0.5rem;
   margin: 1rem;
   cursor: pointer;
-  align-self: flex-start;
+  align-self: center;
   transition: background 0.2s ease;
 }
 
@@ -524,8 +524,8 @@ section {
 .prev-button,
 .next-button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%;                 
+  transform: translateY(-85%); 
   background: rgba(166, 58, 80, 0.9);
   border: none;
   color: white;
@@ -554,6 +554,12 @@ section {
   margin-top: 2rem;
   position: relative;
 }
+
+/* Make the buttons align with the middle of the carousel container */
+.carousel-container {
+  position: relative; /* ensure buttons position against this */
+}
+
 
 /* Contact */
 #contact {
@@ -595,4 +601,16 @@ section {
 
 .email-icon {
   height: 2.5rem;
+}
+
+/* Footer */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+    background-color:rgb(224, 216, 216)
+}
+
+footer p{
+    text-align: center;
 }
