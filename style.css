@@ -731,3 +731,137 @@ footer p{
 .project-card .view-more:hover {
   background: #872c3d;
 }
+
+/* Individual Project Page */
+
+.project-header {
+    justify-content: center;
+}
+
+.project-overview {
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  max-width: 1800px; /* keeps it readable */
+  background: #f7f7f7;
+  border-radius: 0.75rem;
+  border: 2px solid #A63A50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-overview h1 {
+  text-align: center;
+  font-size: 4em;
+  color: #872c3d;
+}
+
+.project-overview h4 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.project-overview h3 {
+  font-size: 2rem;
+  margin: 1.5rem 0 0.75rem;
+  color: #222;
+  text-decoration: underline;
+}
+
+.project-overview p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.project-overview ul {
+  margin-left: 20rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #333;
+  
+}
+
+.project-overview li {
+  margin-bottom: 0.5rem;
+}
+
+.project-overview hr {
+  margin: 2rem 0;
+  border-top: 4px solid #A63A50;
+}
+
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* wider text column, narrower image column */
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.project-description h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  text-decoration: underline;
+}
+
+.project-description ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.proj-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.proj-images img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.link-buttons-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #A63A50; 
+  color: #fff; 
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-btn img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+.link-btn:hover {
+  background-color: #822c3e; 
+  color: #fff;
+  text-decoration: none;
+}

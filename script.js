@@ -14,8 +14,13 @@ tabBtns.forEach(btn => {
   });
 });
 
+const path = window.location.pathname;
+const isProjectsPage = path.endsWith("/projects/"); // exact match
+
+console.log("isProjectsPage:", isProjectsPage);
+
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
+  slidesPerView: isProjectsPage ? 1 : 3,
   slidesPerGroup: 1,
   spaceBetween: 20,
   navigation: {
@@ -26,6 +31,6 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  allowTouchMove: false, 
+  allowTouchMove: false,
   loop: false,
 });
