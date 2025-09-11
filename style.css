@@ -733,135 +733,198 @@ footer p{
 }
 
 /* Individual Project Page */
-
 .project-header {
-    justify-content: center;
+  text-align: center;           /* title centered at top */
+  margin-bottom: 1rem;
 }
 
+/* Main project container */
 .project-overview {
-  margin: auto;
-  margin-bottom: 2rem;
+  margin: auto;            
   padding: 2rem;
-  max-width: 1800px; /* keeps it readable */
+  max-width: 1200px;            /* narrowed for readability */
   background: #f7f7f7;
   border-radius: 0.75rem;
   border: 2px solid #A63A50;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #333;
 }
 
+/* Headings (header remains centered) */
 .project-overview h1 {
-  text-align: center;
-  font-size: 4em;
+  font-size: 2.8rem;
   color: #872c3d;
+  margin: 0 0 0.25rem;
+  line-height: 1.05;
 }
 
 .project-overview h4 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
   color: #555;
+  margin: 0 0 0.75rem;
 }
 
-.project-overview h3 {
-  font-size: 2rem;
-  margin: 1.5rem 0 0.75rem;
-  color: #222;
-  text-decoration: underline;
-}
-
-.project-overview p {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.project-overview ul {
-  margin-left: 20rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 1.6;
-  color: #333;
-  
-}
-
-.project-overview li {
-  margin-bottom: 0.5rem;
-}
-
+/* horizontal rule under header */
 .project-overview hr {
-  margin: 2rem 0;
-  border-top: 4px solid #A63A50;
+  margin: 1.25rem 0;
+  border: none;
+  border-top: 3px solid #A63A50;
+  opacity: 0.9;
 }
 
-
+/* Layout: left text, right images (desktop) */
 .project-layout {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* wider text column, narrower image column */
+  grid-template-columns: 1fr 360px; /* text (fluid) | images (fixed-ish) */
   gap: 2rem;
   align-items: start;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
+/* Left column text */
 .project-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
+  text-align: left;
 }
 
 .project-description h3 {
-  margin-top: 1.5rem;
+  margin-top: 0.8rem;
   margin-bottom: 0.5rem;
+  font-size: 1.15rem;
   color: #222;
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
+/* Lists */
 .project-description ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 1.15rem;
+  padding: 0;
+  list-style: disc;
+  color: #333;
+  font-size: 1rem;
+}
+.project-description ul .nested {
+  list-style-type: circle;
 }
 
+.project-description p {
+    margin-bottom: 1rem;
+}
+
+/* Right column images (stacked vertically on desktop) */
 .proj-images {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  align-items: center;
 }
 
 .proj-images img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: block;
 }
 
-.link-buttons-container {
-  display: flex;
-  justify-content: center; 
-  margin-top: 1.5rem;
-  gap: 1rem;
+/* small caption style (if you add figcaption or .proj-images p) */
+.proj-images figcaption,
+.proj-images p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.35rem;
+  text-align: center;
 }
 
-.link-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.75rem 1.25rem;
-  background-color: #A63A50; 
-  color: #fff; 
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+/* Buttons */ .link-buttons-container { display: flex; justify-content: center; margin-top: 1.5rem; gap: 1rem; flex-wrap: wrap; } 
+.link-btn { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 0.6rem; 
+    padding: 0.6rem 1.2rem; 
+    background-color: #A63A50; 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    border-radius: 0.5rem; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+} 
+.link-btn img { 
+    width: 22px; 
+    height: 22px; 
+    filter: invert(1); 
+} 
+.link-btn:hover { 
+    background-color: #822c3e; 
+    color: #fff; 
+    text-decoration: none; 
 }
 
-.link-btn img {
-  width: 24px;
-  height: 24px;
-  filter: invert(1);
+/* Project viewer overlay (unchanged, preserved) */
+.project-viewer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 4rem 1rem;
+  z-index: 999;
 }
-
-.link-btn:hover {
-  background-color: #822c3e; 
+.project-content {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+.project-viewer.active { display: flex; }
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: #A63A50;
   color: #fff;
-  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+.close-btn:hover { background: #872c3d; }
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 900px) {
+  .project-layout {
+    grid-template-columns: 1fr;   /* stack: text then images */
+  }
+  .proj-images {
+    flex-direction: row;         /* thumbnails side-by-side */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .proj-images img {
+    max-width: 48%;              /* two-per-row thumbnails */
+  }
+  .project-overview h1 { font-size: 2.0rem; }
+  .project-overview h4 { font-size: 1rem; }
+}
+
+/* Very small devices: single-column images */
+@media (max-width: 480px) {
+  .proj-images img { max-width: 100%; }
+  .project-overview { padding: 1.25rem; }
+  .project-overview h1 { font-size: 1.6rem; }
 }
