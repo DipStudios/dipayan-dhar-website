@@ -11,14 +11,12 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">
-            <a href="/">Dipayan Dhar</a>
-        </div>
+        <div class="logo">Dipayan Dhar</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="projects/">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -256,7 +254,6 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
 
     <section id="projects">
     <h2 class="title">Projects</h2>
-    <button class="view-more" onclick="location.href='projects/'">View All</button>
     <div class="projects-wrapper">
         <!-- Prev button outside -->
         <button class="prev-button">‹</button>
@@ -275,7 +272,7 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
                     <h5>Summer 2025</h5>
                     <p>Personal website to display my experience and projects.</p>
                     </div>
-                    <button class="view-more" onclick="location.href='./projects/website.html'">View More</button>
+                    <button class="view-more" data-project="website">View More</button>
                 </div>
                 </div>
                 
@@ -289,7 +286,7 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
                     <h5>Winter 2025</h5>
                     <p>Final project for Introduction to Programming course.</p>
                     </div>
-                    <button class="view-more" onclick="location.href='./projects/rc-car.html'">View More</button>
+                    <button class="view-more" data-project="rccar">View More</button>
                 </div>
                 </div>
 
@@ -303,7 +300,7 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
                     <h5>Fall 2024</h5>
                     <p>Final project for Engineering Graphics and Design course.</p>
                     </div>
-                    <button class="view-more" onclick="location.href='./projects/pla-recycler.html'">View More</button>
+                    <button class="view-more" data-project="plarecycler">View More</button>
                 </div>
                 </div>
 
@@ -317,7 +314,7 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
                     <h5>Winter 2022 - Summer 2024</h5>
                     <p>Pilot and control systems for Viking Industries ROVs.</p>
                     </div>
-                    <button class="view-more" onclick="location.href='./projects/gonzaga-rov.html'">View More</button>
+                    <button class="view-more" data-project="gonzagarov">View More</button>
                 </div>
                 </div>
 
@@ -331,7 +328,7 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
                     <h5>Winter 2024</h5>
                     <p>Produces 50 MCQ for AP Physics 1 exam practice.</p>
                     </div>
-                    <button onclick="location.href='./projects/ap-phys-practice.html'" class="view-more">View More</button>
+                    <button class="view-more" data-project="apphys1">View More</button>
                 </div>
                 </div>
 
@@ -341,11 +338,11 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
                     <img src="./assets/projects/borebot.png" alt="BoreBot">
                     </div>
                     <div class="card-text">
-                    <h3>BoreBot (HackFrost 4.0)</h3>
+                    <h3>BoreBot Concept (HackFrost 4.0)</h3>
                     <h5>Winter 2024</h5>
                     <p>Arctic boring robot concept for HackFrost 4.0 Hackathon.</p>
                     </div>
-                    <button class="view-more" onclick="location.href='./projects/borebot.html'">View More</button>
+                    <button class="view-more" data-project="borebot">View More</button>
                 </div>
                 </div>
 
@@ -355,11 +352,11 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
                     <img src="./assets/projects/boxbot.png" alt="BoxBot">
                     </div>
                     <div class="card-text">
-                    <h3>BoxBot (HackFrost 3.0)</h3>
+                    <h3>BoxBot Interface (HackFrost 3.0)</h3>
                     <h5>Spring 2023</h5>
                     <p>Automatic box cutter concept for HackFrost 3.0 Hackathon.</p>
                     </div>
-                    <button class="view-more" onclick="location.href='./projects/boxbot.html'">View More</button>
+                    <button class="view-more" data-project="boxbot">View More</button>
                 </div>
                 </div>
 
@@ -415,7 +412,7 @@ Suspendisse eu molestie nibh. Cras sagittis in orci lacinia accumsan. Vestibulum
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="projects/">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>

@@ -59,11 +59,10 @@ a:hover {
   font-weight: bold;
 }
 
-.logo a{
+.logo{
   font-size: 2rem;
   color: #A63A50;
   font-weight: bold;
-  cursor: pointer;
 }
 
 /* Sections */
@@ -795,6 +794,7 @@ footer p{
   color: #222;
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-align: center;
 }
 
 /* Lists */
@@ -813,6 +813,9 @@ footer p{
     margin-bottom: 1rem;
 }
 
+.short-description {
+  margin-top: 1rem;
+}
 /* Right column images (stacked vertically on desktop) */
 .proj-images {
   display: flex;
@@ -822,13 +825,20 @@ footer p{
 }
 
 .proj-images img {
-  width: 100%;
   max-width: 100%;
+  max-height: 35vh; /* caps image at 75% of viewport height */
+  width: auto;
   height: auto;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain; /* preserves full image without cropping */
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   display: block;
+  margin: 0 auto; /* optional: centers the image */
+}
+
+.long-img {
+  max-width: 100%;
+  max-height: 1vh; /* smaller cap for long/tall images */
 }
 
 /* small caption style (if you add figcaption or .proj-images p) */
@@ -839,6 +849,20 @@ footer p{
   margin-top: 0.35rem;
   text-align: center;
 }
+
+/* Side-by-side row for last two images */
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* space between images */
+  width: 100%;
+}
+
+.side-by-side img {
+  max-width: 48%;  /* keeps both images fitting neatly */
+  height: auto;
+}
+
 
 /* Buttons */ .link-buttons-container { display: flex; justify-content: center; margin-top: 1.5rem; gap: 1rem; flex-wrap: wrap; } 
 .link-btn { 
@@ -904,27 +928,3 @@ footer p{
   cursor: pointer;
 }
 .close-btn:hover { background: #872c3d; }
-
-/* Responsive: stack on smaller screens */
-@media (max-width: 900px) {
-  .project-layout {
-    grid-template-columns: 1fr;   /* stack: text then images */
-  }
-  .proj-images {
-    flex-direction: row;         /* thumbnails side-by-side */
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .proj-images img {
-    max-width: 48%;              /* two-per-row thumbnails */
-  }
-  .project-overview h1 { font-size: 2.0rem; }
-  .project-overview h4 { font-size: 1rem; }
-}
-
-/* Very small devices: single-column images */
-@media (max-width: 480px) {
-  .proj-images img { max-width: 100%; }
-  .project-overview { padding: 1.25rem; }
-  .project-overview h1 { font-size: 1.6rem; }
-}
