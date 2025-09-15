@@ -328,6 +328,7 @@ const projectData = {
       <div class="project-layout">
         <div class="project-description">
           <p>This project was made for my Introduction to Programming Course. The task was to create something with the Grove Arduino Kit given to us, and we decided to develop a remote-controlled rescue car. The vehicle features manual and autonomous control, a USB camera, horn, and headlights, along with temperature and ultrasonic sensors for data collection and autopilot. Future applications include mapping hazardous areas, such as locating people in unsafe environments like fires.</p>
+          <ul>
             <li>Used the given library for the Arduino Grove kit to integrate hardware components with Python. This included :</li>
               <ul>
                 <li>Writing digital signals to the four DC motors, allowing the car to move around.</li>
@@ -369,15 +370,16 @@ const projectData = {
       <div class="project-layout">
         <div class="project-description">
           <p>This static website serves as a portfolio to showcase my experience, projects, and technical skills as a computer engineering student. It is my first major project working with HTML, CSS, and JS.</p>
+            <ul>
             <li>Used HTML to build the structure of the site. This included:</li>
               <ul>
                 <li>Creating individual sections and text that can be linked via the navbar.</li>
                 <li>Structuring descriptions of about, experience, and projects.</li>
                 <li>Embedding external links such as GitHub repos.</li>
               </ul>
-            <li>Used the Swiper libary to build the project carousel to view my projects easily.</li>
             <li>Used CSS flexbox and grid layouts to place images and information boxes/cards.</li>
-            <li>Implemented dynamic project viewing with JavaScript by attaching event listeners to project buttons, and displaying the project details in a separate viewer.</li>
+            <li>Used the Swiper libary to build the project carousel to view my projects easily.</li>
+            <li>Implemented functionality with JavaScript, including interactive carousel controls and a dynamic project viewer that retrieves project details from a data object.</li>
           </ul>
         </div>
         <div class="proj-images">
