@@ -357,14 +357,15 @@ const projectData = {
           <h1>Personal Website</h1>
           <h4>Summer 2025</h4>
 
-          <p><strong>Skills:</strong> HTML, CSS, JavaScript, Web Development, UI Design, Frontend Programming</p>
+          <p><strong>Skills:</strong> HTML, CSS, JavaScript, Git, Web Development, UI Design, Frontend Programming</p>
           <p><strong>Libraries:</strong> Swiper.js</p>
           <div class="link-buttons-container">
-              <a href="https://www.youtube.com/watch?v=1ZoeJQ7MzsI" class="link-btn" target="_blank">
-                <img src="./assets/youtube.png" alt="Youtube logo" class="youtube-logo">
-                <span>Demo Video</span>
-              </a>    
+               <a href="https://github.com/DipStudios/dipayan-dhar-website" class="link-btn" target="_blank">
+                <img src="./assets/github.png" alt="GitHub logo">
+                <span>GitHub</span>
+               </a>
           </div>
+
       </div>
       <hr>
       <div class="project-layout">
