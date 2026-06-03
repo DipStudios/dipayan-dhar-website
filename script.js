@@ -46,7 +46,43 @@ const swiper = new Swiper('.swiper', {
 
 // Store project content
 const projectData = {
-  technl: `
+  paradigmkart: `
+    <div class="project-overview">
+      <div class="project-header">
+          <h1>Autonomous Kart (Paradigm)</h1>
+          <h4>Fall 2025 – Present</h4>
+          <p><strong>Skills:</strong> C, STM32, PWM, Git, Control Systems</p>
+          <p><strong>Tools:</strong> STM32CubeIDE, Oscilloscope, Pixhawk 6C</p>
+          <div class="link-buttons-container">
+              <a href="https://munparadigm.com/" class="link-btn" target="_blank">
+                <img src="./assets/link.png" alt="Link icon">
+                <span>Pardigm Website</span>
+              </a>
+          </div>
+      </div>
+      <hr>
+      <div class="project-layout">
+        <div class="project-description">
+          <h3>2025-26</h3>
+          <p>As a member of the Software/Firmware team at Paradigm Engineering, I contributed to the development of autonomous control systems for a racing kart competing in the Autonomous Karting Series (AKS) 2026 competition.</p>
+          <ul>
+              <li>Collaborated with electrical, software, and mechanical subteams to develop autonomous control systems for a racing kart competing in the Autonomous Karting Series competition (2026).</li>
+              <li>Designed a closed-loop steering control system enabling real-time PWM signal transfer between an STM32 and NVIDIA Jetson for autonomous motor control.</li>
+              <li>Developed embedded C firmware for an STM32G4 microcontroller using timer interrupts and PWM signal capture to design modular steering and braking code.</li>
+              <li>Implemented STM32 timer input-capture interrupt logic using edge-detection to measure and reconstruct PWM pulse widths in real time.</li>
+              <li>Validated PWM input/output functionality using oscilloscope measurements and system-level testing with a Pixhawk 6C flight controller.</li>
+              <li>Utilized Git for version control and collaborative software development, supporting code reviews and modular integration.</li>
+          </ul>
+        </div>
+        <div class="proj-images">
+          <img src="./assets/project-assets/paradigm/paradigm_team2026.jpg" alt="Paradigm Team picture">
+          <img src="./assets/project-assets/paradigm/kart2026aks.jpg" alt="Paradigm Team Kart" style="height: 17vh; width: 100%; object-fit: cover;">
+          <img src="./assets/project-assets/paradigm/kart2026.png" alt="Picture of kart" style="height: 25vh;">
+        </div>
+      </div>
+    </div>
+  `
+  ,technl: `
     <div class="project-overview">
       <div class="project-header">
           <h1>TechNL Challenge Project</h1>
@@ -228,7 +264,7 @@ const projectData = {
           <h3>2023-24</h3>
           <ul>
             <li>Built a system monitor application with Tkinter, providing a compact and organized dashboard to display relative motor speeds and water sensor activity in real time.</li>
-            <li>Used PyGame to obtain pilot inputs from the joystick controller, translating them into PWM signals for accurate control of motor speed and direction. Mapped inputs to motors for a vectored thrust format.li>
+            <li>Used PyGame to obtain pilot inputs from the joystick controller, translating them into PWM signals for accurate control of motor speed and direction. Mapped inputs to motors for a vectored thrust format.</li>
             <li>Programmed communication between the Raspberry Pi and Arduino via PyFirmata, transmititng commands/data to and from ESCs, servo motors, and sensor modules.</li>
             <li>Implemented long-range pilot control using an Ethernet tether, with SSH and VNC protocols for remote access, allowing the pilot to view and stream live data from the Raspberry Pi to the main laptop during missions.</li>
             <li>Piloted the ROV during competition runs, coordinating with team members to complete assigned underwater tasks while adapting to real-time challenges.</li>
