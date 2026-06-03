@@ -20,9 +20,11 @@ const isProjectsPage = path.endsWith("/projects/");
 console.log("isProjectsPage:", isProjectsPage);
 
 const swiper = new Swiper('.swiper', {
-  slidesPerView: isProjectsPage ? 1 : 3,
+  slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
+  allowTouchMove: true,
+  loop: false,
   navigation: {
     nextEl: '.next-button',
     prevEl: '.prev-button',
@@ -31,8 +33,12 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  allowTouchMove: false,
-  loop: false,
+  breakpoints: {
+    769: {
+      slidesPerView: isProjectsPage ? 1 : 3,
+      allowTouchMove: false,
+    },
+  },
 });
 
 
